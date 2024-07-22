@@ -1,4 +1,4 @@
-* {
+*,*::before,*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -214,7 +214,7 @@ h2 {
   letter-spacing: -0.02em;
   font-size: 64px;
 }
-section {
+section.two , section.one{
   display: flex;
   justify-content: space-evenly;
   margin: auto;
@@ -296,6 +296,7 @@ a.black-button {
   justify-content: center;
   margin: auto;
   max-width: 1535px;
+  min-width: 1055px;/*for not shrink the links and don't go to two lines*/
 }
 .features-list ul {
   background-color: #f7f7f6;
@@ -312,6 +313,7 @@ a.black-button {
 }
 .features-list li {
   font-size: 20px;
+  list-style: none;
 }
 .features a {
   text-decoration: black underline;
@@ -357,4 +359,35 @@ a.black-button {
 .description {
   font-size: 24px;
   text-align: center;
+}
+
+.black-area{
+  background-color: #191919;
+  color: white;
+  
+  margin: 0;
+}
+.black-area a{
+  color: white;
+}
+.plans-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 0;
+}
+.all-links{
+  display: flex;
+  justify-content: center;
+  padding: 80px 32px;
+  gap: 100px;
+}
+.all-links .columns{
+  display: flex;
+  flex-direction: column;
+}
+.columns a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
