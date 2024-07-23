@@ -76,6 +76,14 @@ header {
   color: white;
   font-weight: 500;
 }
+nav{
+  background-color:rgba(255, 255, 255, 0.9);
+  backdrop-filter:  blur(20px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  
+}
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -306,6 +314,22 @@ a.black-button {
   flex-direction: column;
   width: 30%;
 }
+.features-list ul:hover{
+  background-color: black;
+  color: white;
+}
+.features-list  ul a{
+  text-decoration: none;
+  font-weight: 400;
+}
+.features-list ul:hover a{
+  color: white;
+  font-weight: 400;
+}
+.features-list ul:hover img{
+  color: white;
+}
+
 .features-list h4 {
   font-size: 24px;
   font-weight: 400;
@@ -360,11 +384,11 @@ a.black-button {
   font-size: 24px;
   text-align: center;
 }
-
-.black-area{
+footer{
   background-color: #191919;
   color: white;
-  
+}
+.black-area{
   margin: 0;
 }
 .black-area a{
@@ -376,18 +400,103 @@ a.black-button {
   align-items: center;
   padding: 96px 0;
 }
+.plans-section h3{
+  font-size: 64px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.plans-section #topic{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.plans-section .text{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.plans-section .buttons{
+  text-align: center;
+  font-size: 16px;
+  padding: 35px;
+  display: flex;
+  gap: 25px;
+}
+#white-signup-button{
+  background-color: white;
+  color: #191919;
+  padding: 8px 16px;
+  border-radius: 10px;
+  width: 140px;
+}
+#comapare-plan-button{
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+#comapare-plan-button:hover,#white-signup-button:hover{
+  opacity: 0.7;
+  transition: opacity 1s;
+}
 .all-links{
   display: flex;
   justify-content: center;
   padding: 80px 32px;
   gap: 100px;
 }
+.all-links h4{
+  padding-bottom: 25px;
+}
 .all-links .columns{
   display: flex;
   flex-direction: column;
+  gap: 15px;
+}
+.expanding-links:hover{
+  opacity: 0.8;
+}
+.non-expanding-link:hover{
+  transform: translateX(8px);
+  transition: transform 0.2s ease-in 0s;
 }
 .columns a{
   display: flex;
   align-items: center;
   gap: 5px;
+  
+}
+.social-media{
+  display: flex;
+  gap: 10px;
+}
+.social-media a:hover{
+  opacity: 0.8;
+}
+.last-section{
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  padding: 40px 32px;
+  border-top: 1px rgb(61, 61, 60) solid;
+}
+.last-section a{
+  color: white;
+  text-decoration: 1px underline white;
+  font-size: 14px;
+}
+.last-section a:hover{
+  color: rgb(160, 160, 160);
+}
+.last-section div{
+  display: flex;
+  gap: 20px;
+}
+.last-section span{
+  display: flex;
+  gap: 8px;
+}
+#language:hover{
+  opacity: 0.8;
+  cursor: pointer;
 }
