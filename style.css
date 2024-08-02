@@ -10,6 +10,9 @@ a {
   text-decoration: none;
   color: black;
 }
+body{
+  overflow-x: hidden;
+}
 @font-face {
   font-family: apercu-pro;
   src: url(font/apercu_bold_italic_pro.otf);
@@ -71,6 +74,27 @@ header {
 }
 .logo {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  
+  
+}
+/*this is where i'm working , logo is not working*/
+.logo:hover #second-part-logo img{
+  transform: translateX(-100px);
+}
+#second-part-logo{
+  padding-top: 2px;
+  
+  overflow: hidden;
+  width: 100px;
+  position: relative;
+}
+#second-part-logo img{
+  overflow: hidden;
+  transition: transform  3s ;
 }
 .suggestion a {
   color: white;
@@ -277,6 +301,9 @@ a.black-button {
   width: 256px;
   height: 256px;
 }
+.integrations-section .hidden-logos{
+  display: none;
+}
 .integrations-section .title {
   display: flex;
   flex-direction: column;
@@ -288,6 +315,7 @@ a.black-button {
 .integrations-section .big-logos{
   display: flex;
   gap: 30px;
+  
 }
 .features {
   display: flex;
@@ -499,7 +527,9 @@ footer{
 .last-section span{
   display: flex;
   gap: 8px;
+  align-items: center;
 }
+
 #language:hover{
   opacity: 0.8;
   cursor: pointer;
@@ -538,7 +568,7 @@ footer{
     width: 70%;
   }
   section.one,section.two{
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
   .video-container.two{
@@ -546,12 +576,18 @@ footer{
   }
   .content2{
     width: 80%;
+    align-items: center;
+    
   }
   .content2 h3{
     font-size: 30px;
   }
+  .h2-container h2{
+    font-size: 48px;
+  }
   .integrations-section{
     flex-direction: column;
+    padding: 80px 32px;
   }
   .integrations-section .title{
     width: 100%;
@@ -559,6 +595,14 @@ footer{
   }
   .integrations-section .title h3{
     padding-bottom: 20px;
+  }
+  .integrations-section img{
+    width: 184px;
+    height: 184px;
+    padding: 24px;
+  }
+  .integrations-section .hidden-logos{
+    display: flex;
   }
   .features-list ul{
     width: 45%;
@@ -578,5 +622,11 @@ footer{
   }
   section.all-links{
     flex-wrap: wrap;
+  }
+  .big-logos{
+    overflow-x: scroll;
+    width: 100%;
+    
+
   }
 }
